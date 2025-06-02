@@ -59,7 +59,7 @@ body {
 
 
 .intro {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #22c922;
     font-size: 1.5rem;
     margin-top:50px ;
@@ -70,11 +70,11 @@ body {
 .sub-heading {
     font-family: 'Times New Roman', Times, serif;
     color: #0cf10c;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     margin-bottom: 25px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    font-weight:bold ;
+    font-weight:bold;
 }
 
 .summary {
@@ -93,22 +93,25 @@ body {
     display: flex;
     gap: 25px;
     margin: 35px 0;
-    box-shadow: 
+    /* box-shadow:  */
         /* 0 0 10px rgba(4, 245, 4, 0.7),  */
-        0 0 20px rgba(0, 0, 0, 0.5), /* Outer shadow */
-        inset 0 0 5px rgba(255, 255, 255, 0.1); 
+       /* , 0, 0, 0.5 0 0 20px rgba(0), Outer shadow */
+        /* inset 0 0 5px rgba(255, 255, 255, 0.1);  */
 }
 
 .social-icons a {
+    text-decoration: none;
     color: #04f504;
-    font-size: 2rem;
+    font-size: 3rem;
     transition: all 0.3s;
-   
+    width: 70px;
+    height: 70px;
      box-shadow: 0 0 20px rgba(39, 218, 3, 0.3);  
-    display: inline-block;
-    padding: 15px;
+    display: flex;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(0, 0, 0, 0.8); 
+    align-items: center;
+    justify-content: center;
 }
 
 .social-icons a:hover {
@@ -123,15 +126,17 @@ body {
 
 .download-btn {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 10px 32px;
     background-color: #00aa00;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 1.1rem;
     transition: all 0.3s;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
 .download-btn:hover {
@@ -140,7 +145,7 @@ body {
     color: #00aa00;
 }
 
-/* ===== NAVIGATION ===== */
+
 .menu-toggle {
     position: fixed;
     top: 25px;
@@ -179,7 +184,7 @@ body {
     background: rgba(0, 150, 0, 0.5);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+
 @media (max-width: 992px) {
     .container {
         flex-direction: column;
